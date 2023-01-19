@@ -26,7 +26,9 @@ export default function Signing() {
     //handling onsubmit event and applying frontend validation
     const onsubmit = (e) => {
         e.preventDefault()
-        if(credentials){}
+        if(credentials){
+            // yet to do according to the backend API
+        }
     }
 
     return (
@@ -69,8 +71,8 @@ export default function Signing() {
                             <div className='mx-2' >
                                 <input className='' type="checkbox" id="todo" name="todo" value="todo" />
                             </div>
-                            <div className=' text-left h-full' >
-                                <label htmlFor="todo"><small className="ml-1 text-xs text-gray-400">Buy creating an account, I agree to the Terms & Conditions.<br />&nbsp;I have read the Legal Notice and Privacy Policy</small></label>
+                            <div className=' text-left h-full flex items-center' >
+                                <label htmlFor="todo"><small className="ml-1 text-xs text-gray-400">{router.pathname==='/login'?'Rmember me':'Buy creating an account, I agree to the Terms & Conditions.I have read the Legal Notice and Privacy Policy'}</small></label>
                             </div>
                         </div>
                         <button type="submit" className="block w-full h-12 bg_btn_gold my-6 py-2 rounded-full text-white transition hover:shadow-xl">{router.pathname==='/login'?'Login':'Sign Up'}</button>
