@@ -9,7 +9,7 @@
     font-family: 'Futura LT Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Futura LT Regular'), url('../public/FuturaLT.woff') format('woff');
+    src: local('Futura LT Regular'), url('../public/fonts/FuturaLT.woff') format('woff');
 }
 
 
@@ -172,11 +172,28 @@
     background: linear-gradient(92.79deg, #FAE892 0.08%, #B3903E 100.08%);
 }
 
-body:has(input:focus) .data_field{
-    border-color: rgb(161 98 7); ;
+.bg_404{
+    background-image: url(../public/404\ Page.png);
+
 }
 
-.marginx_auto{
+.gradient_txt {
+    font-style: normal;
+    line-height: 50px;
+    /* identical to box height, or 156% */
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #FAE892 0.1%, #B3903E 100.1%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+body:has(input:focus) .data_field {
+    border-color: rgb(161 98 7);
+}
+
+.marginx_auto {
     margin: auto;
 }
 
