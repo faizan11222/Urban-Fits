@@ -51,7 +51,13 @@ export default function Signing() {
                 </div>
 
                 <div className=" w-[95%] md:w-[400px] mx-auto py-7 bg-white">
-                    <form className="bg-white p-2 font_futuraLT" onSubmit={onsubmit} >
+                    <h1 className="w-full text-center text-lg font_futuraLT">Continue With</h1>
+                    <div className="w-full mt-3 mb-5 flex justify-center space-x-6">
+                        <button className=" py-2 px-6 border rounded-full"><a href="#" title="Continue with Google" className='text-lg font-semibold flex items-center space-x-3'><img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" className='inline' width="20" alt="google" /><p>Google</p></a></button>
+                        <button className=" py-2 px-6 border border-black bg-black text-white rounded-full"><a href="#" title="Continue with Google" className='text-lg font-semibold flex items-center space-x-3'><img src="https://www.freepnglogos.com/uploads/mac-cosmetic-png-logo/apple-mac-cosmetic-png-logo-8.png" className='inline' width="28" alt="google" /><p>Apple</p></a></button>
+                    </div>
+                    <h1 className="w-full text-center text-lg font_futuraLT">Or</h1>
+                    <form className="bg-white p-2 border-t font_futuraLT" onSubmit={onsubmit} >
                         <div className={`data_field ${router.pathname==='/login'?'hidden':''} flex items-center border-b  focus:border-yellow-700 hover:border-yellow-600 transition py-2 px-3 mb-4`}>
                             <input className="pl-2 outline-none border-none" type="text" name="username" id="" onChange={onchange} placeholder="Username" />
                         </div>
@@ -76,7 +82,7 @@ export default function Signing() {
                             </div>
                         </div>
                         <button type="submit" className="block w-full h-12 bg_btn_gold my-6 py-2 rounded-full text-white transition hover:shadow-xl">{router.pathname==='/login'?'Login':'Sign Up'}</button>
-                        <Link href={router.pathname==='/login'?'/signup':'/login'} className='mx-[62px] md:mx-20 underline underline-offset-1'>{router.pathname==='/login'?'Create a New Account':'Log in with an Existing Account'}</Link>
+                        <Link href={router.pathname==='/login'?'/signup':'/login'} className='underline underline-offset-1'><h1 className='w-full text-center' >{router.pathname==='/login'?'Create a New Account':'Log in with an Existing Account'}</h1></Link>
                     </form>
                 </div>
             </main>
