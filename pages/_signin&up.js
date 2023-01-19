@@ -96,7 +96,7 @@ export default function Signing() {
                     </div>
                 </section>
 
-                <div className=" w-full my-5 px-10 flex justify-between space-x-3">
+                <div className=" w-full my-5 px-10 flex flex-col lg:flex-row justify-between lg:space-x-3">
                     <Button value="Home" classes='w-full' />
                     <Button value="Catelog" classes='w-full' />
                     <Button value="Contact Us" classes='w-full' />
